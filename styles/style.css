@@ -1,0 +1,143 @@
+/*
+BLACK : #1D1D1D
+GRAY : #2E2E2E
+GRAY-VARIANT: #585858
+MUSTARD: #C18F48
+
+A los 1024px width se debe hacer un query
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #2E2E2E;
+
+}
+
+.title {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-image: url(/images/Claqueta.png);
+    height: 40px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container-main {
+    background-image: url(/images/example2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    padding-top: 1.5rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    color: white;
+    list-style: none;
+    gap: 2rem;
+}
+
+
+.title-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0 0 0;
+    gap: 2rem;
+}
+
+.title-card h4 {
+    color: #C18F48;
+    font-size: 1.5rem;
+}
+
+.title-card h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.title-card p {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.container-cards {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem 0 0 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    gap: 1.5rem;
+    background-color: #585858;
+    padding: 1.5rem;
+}
+
+.top-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.top-card h3 {
+    color: white;
+}
+
+.top-card p {
+    color: #C18F48;
+    font-size: 2rem;
+}
+
+.text-card {
+    font-size: clamp(0.7rem, 1vw, 1.2rem)
+}
+
+.content-card {
+    border-top: 1px solid #C18F48;
+}
+
+.content-card h3 {
+    padding: 1rem 0 1.5rem 0;
+}
+
+.button-card {
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+    background-color: #C18F48;
+    color: white;
+    padding: 1rem 0;
+}
+
+.button-buy {
+    font-weight: bold;
+}
