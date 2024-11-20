@@ -4,7 +4,10 @@ GRAY : #2E2E2E
 GRAY-VARIANT: #585858
 MUSTARD: #C18F48
 
-A los 1024px width se debe hacer un query
+A los 1024px width se debe hacer un query para:
+*nav
+*title-top
+*text-top
 */
 
 
@@ -36,8 +39,8 @@ body {
 
 .container-main {
     background-image: url(/images/example2.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 90vh;
     padding-top: 1.5rem;
 }
@@ -47,6 +50,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    text-wrap: nowrap;
 }
 
 nav ul {
@@ -58,8 +62,28 @@ nav ul {
     gap: 2rem;
 }
 
+.title-top {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    gap: 3rem;
+}
+
+.title-top h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.text-top {
+    color: white;
+    width: 50vw;
+}
+
 
 .title-card {
+    width: 100vw;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,16 +98,20 @@ nav ul {
 
 .title-card h2 {
     color: white;
-    font-size: 2.5rem;
+    font-size: clamp(0.8rem, 4vw, 2.5rem);
 }
 
 .title-card p {
     color: white;
     letter-spacing: 1px;
+    font-size: clamp(0.6rem, 1.5vw, 1rem);
+    text-align: center;
 }
 
 .container-cards {
     width: 100vw;
+    min-width: 300px;
+    max-width: 1920px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -97,6 +125,8 @@ nav ul {
     display: flex;
     flex-direction: column;
     width: 18vw;
+    min-width: 260px;
+    max-width: 1920px;
     gap: 1.5rem;
     background-color: #585858;
     padding: 1.5rem;
@@ -133,11 +163,14 @@ nav ul {
     display: flex;
     justify-content: center;
     width: 15vw;
+    min-width: 215px;
     background-color: #C18F48;
     color: white;
     padding: 1rem 0;
+    font-weight: bold;
 }
 
-.button-buy {
-    font-weight: bold;
+.button-card:hover {
+    cursor: pointer;
+    background-color: #c4a479;
 }
