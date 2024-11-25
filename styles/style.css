@@ -1,0 +1,339 @@
+/*
+BLACK : #1D1D1D
+GRAY : #2E2E2E
+GRAY-VARIANT: #585858
+MUSTARD: #C18F48
+
+A los 1024px width se debe hacer un query para:
+*nav
+*title-top
+*text-top
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #2E2E2E;
+
+}
+
+.title {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-image: url(/images/Claqueta.png);
+    height: 40px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container-main {
+    background-image: url(/images/example2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    padding-top: 1.5rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    color: white;
+    list-style: none;
+    gap: 2rem;
+}
+
+.title-top {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    gap: 3rem;
+}
+
+.title-top h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.text-top {
+    color: white;
+    width: 50vw;
+}
+
+
+.title-card {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0 0 0;
+    gap: 2rem;
+}
+
+.title-card h4 {
+    color: #C18F48;
+    font-size: 1.5rem;
+}
+
+.title-card h2 {
+    color: white;
+    font-size: clamp(0.8rem, 4vw, 2.5rem);
+}
+
+.title-card p {
+    color: white;
+    letter-spacing: 1px;
+    font-size: clamp(0.6rem, 1.5vw, 1rem);
+    text-align: center;
+}
+
+.container-cards {
+    min-width: 300px;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem 0 0 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    min-width: 260px;
+    max-width: 1920px;
+    gap: 1.5rem;
+    background-color: #585858;
+    padding: 1.5rem;
+}
+
+.top-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.top-card h3 {
+    color: white;
+}
+
+.top-card p {
+    color: #C18F48;
+    font-size: 2rem;
+}
+
+.text-card {
+    font-size: clamp(0.7rem, 1vw, 1.2rem)
+}
+
+.content-card {
+    border-top: 1px solid #C18F48;
+}
+
+.content-card h3 {
+    padding: 1rem 0 1.5rem 0;
+}
+
+.button-card {
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+    min-width: 215px;
+    background-color: #C18F48;
+    color: white;
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+.button-card:hover {
+    cursor: pointer;
+    background-color: #c4a479;
+}
+
+/*------------------------------------ Layout de CARDS*/
+.layout-box {
+    width: 100%;
+    background: #202020;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-layout {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.content-layout {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content-layout h5 {
+    color: #C18F48;
+    font-size: 25px;
+    /* clamp */
+}
+
+.content-layout h2 {
+    color: white;
+    font-size: 30px;
+    /* clamp */
+}
+
+.text-layout {
+    width: 50%;
+    color: white;
+}
+
+.cards-layout {
+    padding: 1rem;
+    width: 80%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 16px;
+}
+
+.card-layout-main {
+    background: #585858;
+    grid-column: span 4 / span 4;
+    grid-row: span 3 / span 3;
+    width: 52vw;
+}
+
+.card-layout.one {
+    background: #585858;
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    color: white;
+    display: grid;
+    align-content: space-around;
+    padding: 1.5rem;
+}
+
+
+.card-layout.two {
+    background: #585858;
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    color: white;
+    display: grid;
+    align-content: space-around;
+    padding: 1.5rem;
+}
+
+.card-layout.three {
+    background: #585858;
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 4;
+    color: white;
+    display: grid;
+    align-content: space-around;
+    padding: 1.5rem;
+}
+
+.card-layout.four {
+    background: #585858;
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 1;
+    color: white;
+    display: grid;
+    align-content: space-around;
+    padding: 1.5rem;
+}
+
+.card-layout>h1 {
+    color: #C18F48;
+    font-size: 50px;
+    display: grid;
+    justify-items: end;
+}
+
+.card-description {
+    border-top: solid 1px white;
+    padding: 1rem 0 0 0;
+}
+
+/*-------------------------------------- FIN DEL LAYOUT CARDS*/
+
+section {
+    background-image: url(/images/example3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5rem;
+    padding: 0 4rem 0 0;
+}
+
+.mid-content {
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.mid-content h3 {
+    color: #C18F48;
+}
+
+.button-content {
+    border: solid 3px #C18F48;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    font-weight: bold;
+}
+
+.button-content:hover {
+    background: #C18F48;
+    color: #fff !important;
+
+}
