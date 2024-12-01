@@ -23,6 +23,16 @@ body {
 
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .title {
     color: white;
     display: flex;
@@ -30,25 +40,25 @@ body {
 }
 
 .logo {
-    background-image: url(/images/Claqueta.png);
+    background-image: url(./../images/Claqueta.png);
     height: 40px;
     width: 50px;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.container-main {
-    background-image: url(/images/example2.jpg);
+.hero {
+    background-image: url(./../images/example2.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 90vh;
-    padding-top: 1.5rem;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-wrap: nowrap;
 }
@@ -65,8 +75,9 @@ nav ul {
 .title-top {
     display: flex;
     flex-direction: column;
-    padding: 10rem;
     gap: 3rem;
+    height: -webkit-fill-available;
+    justify-content: center;
 }
 
 .title-top h1 {
@@ -170,7 +181,8 @@ nav ul {
 
 .button-card:hover {
     cursor: pointer;
-    background-color: #c4a479;
+    background: #202020;
+    border: 1px solid #C18F48;
 }
 
 /*------------------------------------ Layout de CARDS*/
@@ -298,9 +310,10 @@ nav ul {
 /*-------------------------------------- FIN DEL LAYOUT CARDS*/
 
 section {
-    background-image: url(/images/example3.jpg);
+    background-image: url(./../images/example3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 80vh;
     display: flex;
     justify-content: flex-end;
@@ -324,6 +337,47 @@ section {
 .button-content {
     border: solid 3px #C18F48;
     width: 30%;
+    min-width: max-content;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    font-weight: bold;
+    background: none;
+    color: white;
+}
+
+.button-content:hover {
+    background: #C18F48;
+    color: #fff !important;
+
+}
+
+article {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    ;
+    padding: 2rem;
+    background: #202020;
+}
+
+.left-side {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+}
+
+.left-side>h3 {
+    color: #C18F48;
+}
+
+.button-left-side {
+    background: #C18F48;
+    width: 30%;
     display: flex;
     justify-content: center;
     padding: 1rem;
@@ -332,8 +386,53 @@ section {
     font-weight: bold;
 }
 
-.button-content:hover {
-    background: #C18F48;
+.button-left-side:hover {
+    border: 2px solid #C18F48;
+    background: none;
     color: #fff !important;
 
+}
+
+.right-side {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.collapsible {
+    background-color: #585858;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #C18F48;
+}
+
+.collapsible:after {
+    content: '▼';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "▲";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: white;
 }
