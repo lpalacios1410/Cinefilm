@@ -346,6 +346,7 @@ section {
     font-weight: bold;
     background: none;
     color: white;
+    font-size: 16px;
 }
 
 .button-content:hover {
@@ -435,4 +436,163 @@ article {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     color: white;
+}
+
+footer {
+    background-image: url(./../images/audiovisual.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    width: 80%;
+    border-bottom: 1px solid #C18F48;
+}
+
+.nav-footer ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    color: white;
+    list-style: none;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.footer-title {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.footer-title h3 {
+    font-size: 50px;
+}
+
+.footer-logo {
+    background-image: url(./../images/Claqueta.png);
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-links {
+    width: 80%;
+    padding: 2rem 0;
+    color: white;
+    border-bottom: 1px solid #C18F48;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.col h3 {
+    width: 60%;
+    border-bottom: 1px solid #C18F48;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+.form-container {
+    background: linear-gradient(#212121, #212121) padding-box,
+        linear-gradient(120deg, transparent 25%, #fac171, #C18F48) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.form-input {
+    color: white;
+    background: transparent;
+    border: 1px solid #414141;
+    border-radius: 5px;
+    padding: 8px;
+    outline: none;
+}
+
+button {
+    border-radius: 5px;
+    padding: 6px;
+    background: #ffffff14;
+    color: white;
+    border: 1px solid #414141;
+}
+
+button:hover {
+    background: #C18F48;
+    cursor: pointer;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #414141;
+    position: relative;
+}
+
+.form-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.form-group input:focus~label,
+.form-group input:valid~label {
+    top: -16px;
+    left: 0;
+    background: #212121 padding-box;
+    padding: 10px 0 0 0;
+    color: #bdb8b8;
+    font-size: 12px;
+}
+
+.footer-end {
+    display: flex;
+    width: 75%;
+    align-items: flex-start;
+    color: white;
+    padding: 1rem 0;
 }
