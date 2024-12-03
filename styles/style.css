@@ -244,7 +244,55 @@ nav ul {
     grid-column: span 4 / span 4;
     grid-row: span 3 / span 3;
     width: 52vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 1rem;
 }
+
+.rating-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating {
+    display: flex;
+
+}
+
+.star {
+    font-size: 16px;
+    color: #bbb;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.star:hover,
+.star.checked {
+    color: gold;
+
+}
+
+.camara {
+    display: flex;
+    width: 30vw;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.camara-man {
+    background: url(./../images/camera-man.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30vw;
+    height: 30vh;
+}
+
+
 
 .card-layout.one {
     background: #585858;
@@ -379,12 +427,14 @@ article {
 .button-left-side {
     background: #C18F48;
     width: 30%;
+    min-width: max-content;
     display: flex;
     justify-content: center;
     padding: 1rem;
     cursor: pointer;
     transition: all 1s ease;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .button-left-side:hover {
@@ -443,7 +493,7 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 60vh;
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
