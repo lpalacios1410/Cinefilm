@@ -16,7 +16,7 @@
                     <div class="logo"></div>
                     <h3>Producers</h3>
                 </div>
-                    <ul>
+                    <ul class="">
                         <li> Home </li>
                         <li> About Us</li>
                         <li> Our Services </li>
@@ -24,6 +24,19 @@
                         <li> Pages </li>
                         <li> Get Products </li>
                     </ul>
+                    <a><button onclick="openNav()" class="menu">Menu</button></a>   
+                    
+                    <div class="overlay" id="mobile-menu">
+                        <a onclick="closeNav()" href="#" class="close">&times;</a>
+                        <div class="overlay-content">
+                                <a> Home </a>
+                                <a> About Us</a>
+                                <a> Our Services </a>
+                                <a> Blog </a>
+                                <a> Pages </a>
+                                <a> Get Products </a>
+                        </div>
+                    </div>
             </nav>
             <div class="title-top">
                 <div class="title-container">
@@ -122,9 +135,9 @@
     <div class="layout-box">
         <div class="top-layout">
             <div class="content-layout">
-                <h5>
+                <h3>
                     Testimonials
-                </h5>
+                </h3>
                 <h2>
                     See Stories of Their Satisfaction
                 </h2>
@@ -298,10 +311,26 @@
                 </div>
                     <ul>
                         <li> www.DownloadNewThemes.com  </li>
-                        <li><img src="./images/facebook.png" style="width: 30px;"/> </li>
-                        <li><img src="./images/instagram.png" style="width: 30px;"/> </li>
-                        <li><img src="./images/discord.png" style="width: 30px;"/> </li>
-                        <li><img src="./images/linkedin.png" style="width: 30px;"/> </li>
+                        <li><img src="./images/facebook.png" 
+                            style="width: 5vw;
+                            max-width: 30px;
+                            min-width: 30px;"/> 
+                        </li>
+                        <li><img src="./images/instagram.png" 
+                            style="width: 5vw;
+                            max-width: 30px;
+                            min-width: 30px;;"/> 
+                        </li>
+                        <li><img src="./images/discord.png" 
+                            style="width: 5vw;
+                            max-width: 30px;
+                            min-width: 30px;"/> 
+                        </li>
+                        <li><img src="./images/linkedin.png" 
+                            style="width: 5vw;
+                            max-width: 30px;
+                            min-width: 30px;"/> 
+                        </li>
                     </ul>
             </div>
 
@@ -345,7 +374,7 @@
                                   <label>Email</label>
                                 </div>
                                 
-                                <button type="submit">SUBMIT</button>
+                                <button class="btn-submit" type="submit">SUBMIT</button>
                             </div>
                         </form>
                     </div>
