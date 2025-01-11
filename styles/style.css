@@ -231,7 +231,7 @@ nav ul {
 }
 
 .cards-layout {
-    min-width: 760px;
+    min-width: 675px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -355,7 +355,7 @@ nav ul {
     padding: 1rem 0 0 0;
 }
 
-.manager-text{
+.manager-text {
     padding: 0 0 1rem 0;
 }
 
@@ -754,6 +754,12 @@ li a {
 
     .card-layout .one .two .three .four {
         grid-column: 1/ span 4;
+    }
+}
+
+@media (max-width: 600px) {
+    article {
+        flex-direction: column;
     }
 }
 
