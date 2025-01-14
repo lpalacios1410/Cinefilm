@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function openNav(){
         document.getElementById('mobile-menu').style.width = '100%'
+        document.getElementById('mobile-menu').style.transition = 'all 0.4s ease'
     }
     
     function closeNav(){
