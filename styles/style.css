@@ -840,3 +840,12 @@ li a {
         gap: 1rem;
     }
 }
+
+@media (max-width: 768px) {
+    .nav-footer ul {
+
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
