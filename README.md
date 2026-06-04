@@ -2,15 +2,20 @@
 
 Movie catalog platform with a clean, responsive interface for browsing and discovering films.
 
-🔗 [Live Demo](https://cinefilm-three.vercel.app/) · `HTML` `CSS` `JavaScript`
+> It's worth noting that it was one of my first (projects)🤣
+
+🔗 [Live Demo](https://cinefilm-rosy.vercel.app/) · `HTML` `CSS` `JavaScript`
 
 ---
 
 ## Screenshots 📸
 
-<!-- TODO: Add screenshots here -->
-<!-- ![Home page](url) -->
-<!-- ![Movie detail](url) -->
+![image alt](https://github.com/lpalacios1410/Cinefilm/blob/9160bbeda9dc9686807805380d7da7e7c4baef67/cine1.png)
+
+![image alt](https://github.com/lpalacios1410/Cinefilm/blob/9160bbeda9dc9686807805380d7da7e7c4baef67/cine2.png)
+
+![image alt](https://github.com/lpalacios1410/Cinefilm/blob/9160bbeda9dc9686807805380d7da7e7c4baef67/cine3.png)
+
 
 ---
 
